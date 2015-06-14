@@ -78,7 +78,7 @@ app.get('/callback', function(req, res) {
                 log(body);
                 var access_token = body.access_token;
 
-                res.redirect('http://localhost:5000?' +
+                res.redirect('http://helpticket.herokuapp.com/?' +
                  querystring.stringify({
                  access_token: access_token
                  }));
